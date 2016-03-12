@@ -4,11 +4,7 @@
   ini_set('display_errors', 1);
   error_reporting(~0);
 
-  $serverName = "52.77.236.89";
-  $userName = "kenshero";
-  $userPassword = "password";
-  $dbName = "member";
-  $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);
+  require_once("connect.php");
 
 
   $strUsername = mysqli_real_escape_string($conn,$_POST['txtUsername']);
