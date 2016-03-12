@@ -8,7 +8,8 @@
   ini_set('display_errors', 1);
   error_reporting(~0);
   require_once("connect.php");
-
+  require_once("indexserver.php");
+  
   if(!isset($_SESSION['UserID']))
   {
     echo "Please Login!";
@@ -17,7 +18,6 @@
 
    $sql = "SELECT * FROM products";
    $query = mysqli_query($conn,$sql);
-   echo "Server 2";
 ?>
 <h1>Products</h1>
 <table width="600" border="1">

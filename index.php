@@ -8,7 +8,7 @@
   ini_set('display_errors', 1);
   error_reporting(~0);
   require_once("connect.php");
-
+  require_once("indexserver.php");
 
   if(isset($_SESSION['UserID']))
   {
@@ -19,8 +19,6 @@
   $query = mysqli_query($conn,$sql);
 
   echo "<br>";
-  echo "Server 2";
-
 ?>
 &nbsp &nbsp &nbsp &nbsp &nbsp
 <a href="./login.php">Login</a>
